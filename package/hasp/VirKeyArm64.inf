@@ -3,7 +3,7 @@ Signature="$Windows NT$"
 Class=USB
 ClassGuid={36FC9E60-C465-11CF-8056-444553540000}
 Provider=%ProviderName%
-DriverVer=09/30/2026,0.1.0.30
+DriverVer=09/30/2026,1.0.0.0
 CatalogFile=VirKeyArm64.cat
 PnpLockdown=1
 
