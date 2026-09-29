@@ -1,0 +1,17 @@
+2026-09-30T03:51:02.1142880+08:00
+
+DisplayName                                                 DisplayVersion InstallLocation                             
+-----------                                                 -------------- ---------------                             
+SolidCAM Embedded CAD 2024 x64                              32.110.0123    C:\Program Files\SolidCAM2024\SolidCAMCAD...
+SolidCAM Embedded CAD 2023 x64 chinese-simplified Resources 32.110.0123    C:\Program Files\SolidCAM2024\SolidCAMCAD...
+SolidCAM SolidShop Suite 2024.01.14 (x64)                   2024.01.14     C:\Program Files\SolidCAM2024\Solidcam\So...
+SolidCAM2024                                                24.0.0         C:\Program Files\SolidCAM2024\              
+
+
+
+
+FullName : C:\Program Files\SolidCAM2024\SolidCAMCAD2024\sldworks.exe
+Length   : 705352
+
+
+

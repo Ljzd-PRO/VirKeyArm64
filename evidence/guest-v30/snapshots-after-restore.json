@@ -1,0 +1,18 @@
+{
+	"{e4e8f2d0-b82e-4d34-86e8-2a0050558e1a}": {
+	"name": "VirKeyArm64-before-test",
+	"date": "2026-09-29 22:30:00",
+	"state": "poweron",
+	"current": false,
+	"parent": ""
+}
+,
+	"{d09acfde-e1b5-4c73-9614-8301c7110f1b}": {
+	"name": "Before VirKeyArm64 retest after SolidWorks",
+	"date": "2026-09-30 01:38:37",
+	"state": "poweron",
+	"current": true,
+	"parent": "{e4e8f2d0-b82e-4d34-86e8-2a0050558e1a}"
+}
+
+}

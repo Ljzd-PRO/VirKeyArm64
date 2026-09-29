@@ -1,0 +1,23 @@
+﻿
+
+Class        : USB
+FriendlyName : VirKeyArm64 Virtual USB Controller
+InstanceId   : ROOT\VIRKEYARM64\0000
+Status       : OK
+Problem      : CM_PROB_NONE
+
+Class        : USB
+FriendlyName : Sentinel USB Key
+InstanceId   : USB\VID_0529&PID_0001\2&3B88D3F4&0&1
+Status       : OK
+Problem      : CM_PROB_NONE
+
+Class        : USB
+FriendlyName : Sentinel HASP Key
+InstanceId   : USB\HASP\3&12B1D3C7&0&SC00
+Status       : OK
+Problem      : CM_PROB_NONE
+
+
+
+

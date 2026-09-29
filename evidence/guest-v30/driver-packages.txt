@@ -1,0 +1,19 @@
+﻿
+
+DeviceName    : Sentinel HASP Key
+DriverVersion : 0.1.0.30
+InfName       : oem33.inf
+IsSigned      : False
+
+DeviceName    : Sentinel USB Key
+DriverVersion : 0.1.0.30
+InfName       : oem34.inf
+IsSigned      : False
+
+DeviceName    : VirKeyArm64 Virtual USB Controller
+DriverVersion : 0.1.0.30
+InfName       : oem34.inf
+IsSigned      : False
+
+
+

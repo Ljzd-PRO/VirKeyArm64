@@ -1,0 +1,11 @@
+.DS_Store
+.venv/
+build/
+vendor/
+toolchain/lld-link
+reference/*
+!reference/inf2cat-arm64-diagnostic.cat
+package/*.unsigned.cat
+package/hasp/*.unsigned.cat
+__pycache__/
+*.pyc

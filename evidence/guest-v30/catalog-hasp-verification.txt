@@ -1,0 +1,40 @@
+Warning: Use -catalog option to verify that a file, listed in catalog file, is signed
+
+Signature Index: 0  (Primary Signature)
+
+Signer's certificate:
+	------------------
+	Signer #0:
+		Subject: CN=VirKeyArm64 Local Test Signing
+		Issuer : CN=VirKeyArm64 Local Test Signing
+		Serial : 360B52C97EAB373B88B26EB367C6CB9E941577DD
+		Certificate expiration date:
+			notBefore : Sep 29 14:25:36 2026 GMT
+			notAfter : Oct 29 14:25:36 2026 GMT
+
+Message digest algorithm: SHA256
+
+Authenticated attributes:
+	Signing time: Sep 29 19:39:04 2026 GMT
+	Microsoft Individual Code Signing purpose
+	Message digest: 6C2130272E191ADC96B5C3B702415AFAE5246096748FD84BE3F60FB91379B45C 
+
+CAfile: build/test-cert.pem
+TSA's certificates file: /etc/ssl/cert.pem
+
+Timestamp is not available
+
+Signing certificate chain verified using:
+	------------------
+	Signer #0:
+		Subject: CN=VirKeyArm64 Local Test Signing
+		Issuer : CN=VirKeyArm64 Local Test Signing
+		Serial : 360B52C97EAB373B88B26EB367C6CB9E941577DD
+		Certificate expiration date:
+			notBefore : Sep 29 14:25:36 2026 GMT
+			notAfter : Oct 29 14:25:36 2026 GMT
+
+Signature verification: ok
+
+Number of verified signatures: 1
+Succeeded

@@ -1,0 +1,14 @@
+{
+  "ioctl_count": 25,
+  "failed_ioctls": [],
+  "dynamic_decode_count": 16,
+  "distinct_challenges": 15,
+  "request_lengths": {
+    "6": 1,
+    "256": 6,
+    "8192": 1,
+    "304": 1,
+    "272": 1,
+    "264": 15
+  }
+}

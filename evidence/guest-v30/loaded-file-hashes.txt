@@ -1,0 +1,16 @@
+﻿
+
+Algorithm : SHA256
+Hash      : 3B59BEDBFDA7CC6B3A734D50AAE061CC689A623F730509F0E3146C645D68BB28
+Path      : C:\WINDOWS\System32\DriverStore\FileRepository\virkeyarm64.inf_arm64_8657b391aab7fbd2\VirKeyArm64.sys
+
+Algorithm : SHA256
+Hash      : 3B59BEDBFDA7CC6B3A734D50AAE061CC689A623F730509F0E3146C645D68BB28
+Path      : C:\WINDOWS\System32\DriverStore\FileRepository\virkeyarm64.inf_arm64_7130a7e1dd06c952\VirKeyArm64.sys
+
+Algorithm : SHA256
+Hash      : 7374D34154A47F03F0D48FBED9D86511A88A208B2E6CDDBF6BBB5F3FFEEAE5A9
+Path      : C:\Program Files\SolidCAM2024\Solidcam\Solidcam.exe
+
+
+
