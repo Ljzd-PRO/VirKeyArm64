@@ -85,6 +85,6 @@ python3 tools/make-launcher-laa-copy.py \
 C:\Program Files\SolidCAM2024\Solidcam\solidcame-arm64-diagnostic.exe
 ```
 
-启动工作目录应为 `C:\Program Files\SolidCAM2024\Solidcam`，不添加参数。当前主窗口保持运行，不要再重复启动。当前桌面安装快捷方式仍指向原始启动器，仍会遇到原始错误。
+启动工作目录应为 `C:\Program Files\SolidCAM2024\Solidcam`，不添加参数。当前主窗口保持运行，不要再重复启动。当前桌面安装快捷方式仍指向原始启动器，仍会遇到原始错误。后续已通过 `tools/guest-create-laa-shortcut.ps1` 创建并回读核验独立桌面入口 **SolidCAM2024E ARM64 (LAA)**，目标为上述副本，参数为空且工作目录正确；以后使用这个新入口即可。脚本可重复运行，拒绝覆盖字段不同的同名快捷方式。
 
 脚本在 Mac 重新生成第二个副本，得到相同 SHA256，证明本次修改可重现。没有提交厂商 EXE、完整反汇编、进程环境或 OEM 配置内容。
