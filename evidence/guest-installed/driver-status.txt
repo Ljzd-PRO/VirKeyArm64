@@ -1,0 +1,25 @@
+﻿
+
+GlobalStage               : 7
+GlobalStatus              : 0
+DiagnosticStage           : 1
+DiagnosticStatus          : 0
+SelectedSerialNumber      : 1328500525
+SelectedFromNewRoot       : 1
+SelectedDumpName          : {52, 0, 67, 0...}
+ObservedIoctl00           : 2621449296
+ObservedInput00           : 6
+ObservedOutput00          : 6
+ObservedPayload00         : {1, 0, 0, 0...}
+ObservedIoctl01           : 2621449304
+ObservedInput01           : 256
+ObservedOutput01          : 256
+ObservedPayload01         : {3, 88, 0, 0...}
+UnsupportedChallengeCount : 2
+LastChallengeLength       : 264
+LastChallengeTail         : {0, 0, 0, 0...}
+ImagePath                 : \SystemRoot\System32\DriverStore\FileRepository\virkeyarm64.inf_arm64_8657b391aab7fbd2\VirKeyArm64.sys
+
+
+
+

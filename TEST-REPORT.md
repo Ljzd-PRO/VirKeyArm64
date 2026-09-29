@@ -58,4 +58,14 @@ SYS、INF、CAT、ARM64 节点/探测工具均由 Mac 构建。SYS 与 EXE 的 P
 
 已先正常关机，再恢复安装 CAD 组件后的快照 `{d09acfde-e1b5-4c73-9614-8301c7110f1b}`，虚拟机恢复运行。恢复后未发现 VirKeyArm64 当前设备或驱动绑定；已核对 SolidCAM Embedded CAD 2024 及 SolidCAM 2024 仍安装。此次测试启动的远端 SolidCAM、Frida 服务及本地 SSH 转发已关闭。
 
-[恢复后核验](evidence/guest-v30/post-restore-check.txt)；[快照清单](evidence/guest-v30/snapshots-after-restore.json)。Mac 中的包、源码、证据保留；当前客体已回到测试前状态，重新使用需按 README 安装本包。
+[恢复后核验](evidence/guest-v30/post-restore-check.txt)；[快照清单](evidence/guest-v30/snapshots-after-restore.json)。随后按用户要求进行了下面的常驻安装。
+
+## 常驻安装与重启复核
+
+在 Git 提交 `d6cc270` 后，关闭 Parallels 虚拟机的 Secure Boot，启用 Windows 测试签名，导入 `VirKeyArm64-Test.cer` 公钥和 SC 注册表样本，安装 HASP 与根/USB 两包。首次启动原始 `Solidcam.exe` 通过授权检查、确认默认设置后进入 SolidCAM Manager。
+
+再次重启 Windows 后，`tools/guest-persistent-check.ps1` 逐项核对证书、测试签名、`VirKeyArm64\Dumps` 优先选择、三个无问题码设备、两个 DriverStore 中 SYS 的 SHA256、`0.1.0.30` 包版本和 CAD/SolidCAM 文件，全部通过。重启后原始 `Solidcam.exe` 再次打开 SolidCAM Manager。**当前虚拟机保留这套安装**，未执行第二次快照恢复。
+
+[持久性检查输出](evidence/guest-installed/persistent-check.txt)、[重启后界面](evidence/guest-installed/SolidCAM-Manager-after-reboot.png)、[设备状态](evidence/guest-installed/devices.txt)、[驱动文件哈希](evidence/guest-installed/loaded-file-hashes.txt)、[SetupAPI 安装日志](evidence/guest-installed/setupapi.dev.log)。
+
+本轮使用的测试证书有效期至 2026-10-29 22:25（北京时间）；它并非生产签名证书。到期后继续运行的签名验收尚未验证，届时需重新签名并重新安装。

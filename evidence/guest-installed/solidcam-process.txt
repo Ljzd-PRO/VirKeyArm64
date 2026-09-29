@@ -1,0 +1,8 @@
+﻿
+
+Id        : 8932
+Path      : C:\Program Files\SolidCAM2024\Solidcam\Solidcam.exe
+StartTime : 9/30/2026 4:04:46 AM
+
+
+

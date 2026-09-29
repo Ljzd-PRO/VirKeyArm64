@@ -67,7 +67,7 @@ def create_test_certificate() -> None:
     private.parent.mkdir(parents=True, exist_ok=True)
     subprocess.run([
         "openssl", "req", "-x509", "-newkey", "rsa:3072", "-sha256",
-        "-nodes", "-days", "7", "-subj", "/CN=VirKeyArm64 Test",
+        "-nodes", "-days", "365", "-subj", "/CN=VirKeyArm64 Test",
         "-keyout", str(private), "-out", str(pem),
     ], check=True)
     private.chmod(0o600)

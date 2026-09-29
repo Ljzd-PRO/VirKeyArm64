@@ -37,7 +37,7 @@ osslsigncode verify -in package/hasp/VirKeyArm64.cat -CAfile build/test-cert.pem
 
 测试私钥位于 `build/private/test-key.pem`，不属于安装包，不复制进客体。CAT 为本地测试签名，不是微软生产签名。INF 目标为 Windows ARM64 build 26100 或更新版本，KMDF 1.33。
 
-在已有快照且 BitLocker 状态已核对的测试客体中，以管理员 PowerShell 执行以下流程。脚本默认共享路径对应本机工作区。
+在已有快照且 BitLocker 状态已核对的测试客体中，先关闭虚拟机的 Secure Boot（Parallels 的 `prlctl set <VM-UUID> --efi-secure-boot off` 需要在关机后执行），再启动虚拟机，以管理员 PowerShell 执行以下流程。脚本从自身位置定位 `package/`，下方共享路径对应本机工作区。
 
 ```powershell
 $project = '\\Mac\Home\Documents\Codex\2026-09-29\w\work\virkey-arm64'
@@ -59,4 +59,4 @@ reg.exe import "$project\package\VirKeyArm64-SC-Test.reg"
 
 UdeCx 的 USB vendor control 请求尚未完整实现；现阶段由配套功能层处理已观察到的 IOCTL。不要把本包视为任意 USB 客户端都可用的完整硬件仿真。原始 `solidcame.exe` 启动器的 ARM64 仿真问题 `0xC0000017` 仍单独存在；本次成功使用原始 `Solidcam.exe`，未修改 SolidCAM 或 Sentinel 用户态二进制。
 
-测试 VM 为 `decbd7d1-b22f-4c4e-95e7-fd95b44e8671`。本轮恢复点是安装 SolidWorks 后的 `{d09acfde-e1b5-4c73-9614-8301c7110f1b}`，不得误用较早、尚未安装 SolidWorks 的快照。恢复后的实际状态见测试报告。
+测试 VM 为 `decbd7d1-b22f-4c4e-95e7-fd95b44e8671`。2026-09-30 已在其中安装并重启验证：测试签名启用、两份驱动包与三个设备节点保留，原始 `Solidcam.exe` 再次打开 SolidCAM Manager。安装前恢复点是补装 CAD 组件后的 `{d09acfde-e1b5-4c73-9614-8301c7110f1b}`；恢复它会撤销本轮常驻安装。当前测试证书有效期至 **2026-10-29 22:25（北京时间）**，届时继续测试须重新签名并安装。

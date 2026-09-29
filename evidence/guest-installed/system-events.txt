@@ -1,0 +1,27 @@
+﻿
+
+TimeCreated  : 9/30/2026 4:04:33 AM
+ProviderName : Service Control Manager
+Id           : 7045
+Message      : A service was installed in the system.
+               
+               Service Name:  Sentinel HASP Key
+               Service File Name:  \SystemRoot\System32\DriverStore\FileRepository\virkeyarm64.inf_arm64_7130a7e1dd06c952\VirKeyArm64.sys
+               Service Type:  kernel mode driver
+               Service Start Type:  demand start
+               Service Account:  
+
+TimeCreated  : 9/30/2026 4:04:32 AM
+ProviderName : Service Control Manager
+Id           : 7045
+Message      : A service was installed in the system.
+               
+               Service Name:  Sentinel USB Key
+               Service File Name:  \SystemRoot\System32\DriverStore\FileRepository\virkeyarm64.inf_arm64_8657b391aab7fbd2\VirKeyArm64.sys
+               Service Type:  kernel mode driver
+               Service Start Type:  demand start
+               Service Account:  
+
+
+
+
