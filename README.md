@@ -2,6 +2,8 @@
 
 **VirKeyArm64** 是面向 Windows 11 ARM64 的实验性虚拟 USB／HASP 内核驱动。它在 Windows ARM64 中呈现一个与特定 Sentinel SC 锁相符的设备，处理已观察到的 SC 请求，让依赖该锁的旧版 x64 应用能够在 Windows 用户态仿真环境中完成启动授权。驱动、INF、CAT 和辅助程序在 macOS 上构建；Windows 客体用于安装和验证。
 
+从旧驱动不兼容、协议对照、Mac 构建和客体验收到启动器修复与发布的完整过程，见 [2026-09-30 调查、实现与验收全记录](docs/2026-09-30-investigation-and-results.md)。该记录逐项标明依据、已验证结果和仍未验证的范围。
+
 当前发布版本为 **1.0.0**，只支持 **SC `Type=1`** 转储。此前 `0.1.0.30` 已在 Parallels Windows 11 ARM64 中用一份 SC 样本验证 SolidCAM 2024 的启动授权和 SolidCAM Manager。1.0.0 的两份 SYS 与那次客体验证的 SYS **逐字节相同**（SHA256 `3b59bedbfda7cc6b3a734d50aae061cc689a623f730509f0e3146c645d68bb28`）；1.0.0 更新了 INF 包版本、CAT 和一年期测试证书。**1.0.0 包尚未在客体单独重新安装验证。**
 
 > 这是本地测试签名包，需要 Windows 测试签名模式以及信任随包提供的公钥证书。它没有微软生产签名，也不代表已支持任意 Sentinel 锁、USB 客户端或 SolidCAM 配置。转储含有设备与许可相关数据，请自行控制其保存和分享范围。
@@ -56,7 +58,7 @@ HKLM\SYSTEM\CurrentControlSet\VirKeyArm64\Dumps
 
 ## 取得发布包
 
-私有仓库的 [v1.0.0 Release](../../releases/tag/v1.0.0) 提供 `VirKeyArm64-1.0.0-windows-arm64.zip`：
+私有仓库的 [v1.0.0 Release](https://github.com/Ljzd-PRO/VirKeyArm64/releases/tag/v1.0.0) 提供 `VirKeyArm64-1.0.0-windows-arm64.zip`：
 
 ```text
 VirKeyArm64-1.0.0/
