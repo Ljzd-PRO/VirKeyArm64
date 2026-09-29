@@ -49,7 +49,7 @@ SYS、INF、CAT、ARM64 节点/探测工具均由 Mac 构建。SYS 与 EXE 的 P
 
 - 通过的是本次 SC 样本与 SolidCAM 2024 的启动授权。没有验证完整 CAM 零件创建、刀路计算、后处理、所有模块或长时间会话。
 - 测试前已经安装 SolidWorks；本次没有把“CAD 主程序缺失”作为结果解释。
-- 原始 `solidcame.exe` 启动器仍存在独立的 ARM64 仿真错误 `0xC0000017`。直接启动原始 `Solidcam.exe` 成功，不代表桌面启动器已经修好。
+- 此轮驱动验收时，原始 `solidcame.exe` 启动器仍存在独立的 ARM64 仿真错误 `0xC0000017`。后续已定位缺少 LAA 标志，并用只修改一个字节的独立副本进入 Embedded 主窗口；原始安装入口未覆盖。见 [启动器专项分析](LAUNCHER-ANALYSIS.md)。
 - 配套 ARM64 功能层实现所需 IOCTL；UdeCx vendor USB 请求仍不完整，不保证第三方驱动/客户端的完整 USB 协议兼容。
 - `hasplms` 正在运行，但本次授权关键路径是应用直接访问 HASP 设备接口。Sentinel ACC 列表不作为本次 legacy SC 授权的验收证据。
 - 只支持 SC Type=1；MC Type=10 未实现。包为短期本地测试签名。

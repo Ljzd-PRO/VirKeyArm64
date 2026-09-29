@@ -1,0 +1,8 @@
+{
+  "source_sha256": "26d72b6c13a5704bf49097eb534d3b86f93f931870744b195373f2b54395dc7b",
+  "copy_sha256": "86dd940519e96d5787282bcc38a56b8462d2f43602db80a9b554f31c97f4c726",
+  "changed_offset": "0x11e",
+  "old": "0x2",
+  "new": "0x22",
+  "only_change": "IMAGE_FILE_LARGE_ADDRESS_AWARE"
+}

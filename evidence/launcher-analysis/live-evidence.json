@@ -1,0 +1,53 @@
+{
+  "CapturedAt": "2026-09-30T04:28:33.4403584+08:00",
+  "Processes": [
+    {
+      "Name": "sldworks.exe",
+      "ProcessId": 908,
+      "ParentProcessId": 8952,
+      "ExecutablePath": "c:\\progra~1\\solidc~1\\solidc~1\\sldworks.exe",
+      "CommandLine": "c:\\progra~1\\solidc~1\\solidc~1\\sldworks.exe"
+    },
+    {
+      "Name": "Solidcam.exe",
+      "ProcessId": 1460,
+      "ParentProcessId": 908,
+      "ExecutablePath": "C:\\Program Files\\SolidCAM2024\\Solidcam\\Solidcam.exe",
+      "CommandLine": "*0x00020d12*0x000307b6*1*0*"
+    }
+  ],
+  "Modules": [
+    {
+      "ProcessId": 908,
+      "Path": "c:\\progra~1\\solidc~1\\solidc~1\\sldworks.exe",
+      "FileVersion": "32.1.0.0123"
+    },
+    {
+      "ProcessId": 908,
+      "Path": "c:\\progra~1\\solidc~1\\solidc~1\\sldappu.dll",
+      "FileVersion": "32.1.0.0123"
+    },
+    {
+      "ProcessId": 908,
+      "Path": "C:\\Program Files\\SolidCAM2024\\Solidcam\\HostLibSWEM.dll",
+      "FileVersion": "1, 0, 0, 1"
+    },
+    {
+      "ProcessId": 1460,
+      "Path": "C:\\Program Files\\SolidCAM2024\\Solidcam\\Solidcam.exe",
+      "FileVersion": "12, 0, 2, 0"
+    }
+  ],
+  "Files": [
+    {
+      "Path": "C:\\Program Files\\SolidCAM2024\\Solidcam\\solidcame.exe",
+      "SHA256": "26D72B6C13A5704BF49097EB534D3B86F93F931870744B195373F2B54395DC7B",
+      "SignatureStatus": "Valid"
+    },
+    {
+      "Path": "C:\\Program Files\\SolidCAM2024\\Solidcam\\solidcame-arm64-diagnostic.exe",
+      "SHA256": "86DD940519E96D5787282BCC38A56B8462D2F43602DB80A9B554F31C97F4C726",
+      "SignatureStatus": "HashMismatch"
+    }
+  ]
+}

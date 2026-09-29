@@ -57,6 +57,6 @@ reg.exe import "$project\package\VirKeyArm64-SC-Test.reg"
 
 参考了旧 vusbbus 的结构、[UsbHasp](https://github.com/sam88651/UsbHasp) 的块变换结构、用户提供的 MulttKey x64 镜像反汇编及远端实际 I/O。当前 C 实现重新编写，没有将旧 GPLv3 源文件直接复制进驱动；本项目不声称经过正式隔离的洁净室流程。
 
-UdeCx 的 USB vendor control 请求尚未完整实现；现阶段由配套功能层处理已观察到的 IOCTL。不要把本包视为任意 USB 客户端都可用的完整硬件仿真。原始 `solidcame.exe` 启动器的 ARM64 仿真问题 `0xC0000017` 仍单独存在；本次成功使用原始 `Solidcam.exe`，未修改 SolidCAM 或 Sentinel 用户态二进制。
+UdeCx 的 USB vendor control 请求尚未完整实现；现阶段由配套功能层处理已观察到的 IOCTL。不要把本包视为任意 USB 客户端都可用的完整硬件仿真。此前启动授权验收使用原始 `Solidcam.exe`，未修改 SolidCAM 或 Sentinel 用户态二进制。后续已独立定位 `solidcame.exe` 的 `0xC0000017`：原始 x64 启动器缺少 LAA 标志。只启用该标志的独立诊断副本已在 ARM64 客体进入完整 Embedded 主窗口；原始文件及快捷方式保留。副本签名失效及完整证据见 [LAUNCHER-ANALYSIS.md](LAUNCHER-ANALYSIS.md)。
 
 测试 VM 为 `decbd7d1-b22f-4c4e-95e7-fd95b44e8671`。2026-09-30 已在其中安装并重启验证：测试签名启用、两份驱动包与三个设备节点保留，原始 `Solidcam.exe` 再次打开 SolidCAM Manager。安装前恢复点是补装 CAD 组件后的 `{d09acfde-e1b5-4c73-9614-8301c7110f1b}`；恢复它会撤销本轮常驻安装。当前测试证书有效期至 **2026-10-29 22:25（北京时间）**，届时继续测试须重新签名并安装。

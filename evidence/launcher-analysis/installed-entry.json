@@ -1,0 +1,73 @@
+{
+  "Entries": [
+    {
+      "Shortcut": "C:\\Users\\Public\\Desktop\\SolidCAM2024 For Operators.lnk",
+      "Target": "C:\\Program Files\\SolidCAM2024\\Solidcam\\ShopFloorEditor.exe",
+      "Arguments": "",
+      "WorkingDirectory": "C:\\Program Files\\SolidCAM2024\\Solidcam\\"
+    },
+    {
+      "Shortcut": "C:\\Users\\Public\\Desktop\\SolidCAM2024E.lnk",
+      "Target": "C:\\Program Files\\SolidCAM2024\\Solidcam\\solidcame.exe",
+      "Arguments": "",
+      "WorkingDirectory": "C:\\Program Files\\SolidCAM2024\\solidcam\\"
+    },
+    {
+      "Shortcut": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\SolidCAM2024\\SolidCAM2024 For Operators.lnk",
+      "Target": "C:\\Program Files\\SolidCAM2024\\Solidcam\\ShopFloorEditor.exe",
+      "Arguments": "",
+      "WorkingDirectory": "C:\\Program Files\\SolidCAM2024\\Solidcam\\"
+    },
+    {
+      "Shortcut": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\SolidCAM2024\\SolidCAM2024E.lnk",
+      "Target": "C:\\Program Files\\SolidCAM2024\\Solidcam\\solidcame.exe",
+      "Arguments": "",
+      "WorkingDirectory": "C:\\Program Files\\SolidCAM2024\\solidcam\\"
+    }
+  ],
+  "Files": [
+    {
+      "Path": "C:\\Program Files\\SolidCAM2024\\Solidcam\\solidcame.exe",
+      "Length": 667936,
+      "FileVersion": null,
+      "ProductVersion": null,
+      "Hash": "26D72B6C13A5704BF49097EB534D3B86F93F931870744B195373F2B54395DC7B"
+    },
+    {
+      "Path": "C:\\Program Files\\SolidCAM2024\\Solidcam\\Solidcam.exe",
+      "Length": 51463960,
+      "FileVersion": "12, 0, 2, 0",
+      "ProductVersion": "12, 0, 2, 0",
+      "Hash": "7374D34154A47F03F0D48FBED9D86511A88A208B2E6CDDBF6BBB5F3FFEEAE5A9"
+    },
+    {
+      "Path": "C:\\Program Files\\SolidCAM2024\\SolidCAMCAD2024\\sldworks.exe",
+      "Length": 705352,
+      "FileVersion": "32.1.0.0123",
+      "ProductVersion": "32.1.0.0123",
+      "Hash": "4ED25379F8F4A7C4C99F6940E9203966D3C7315DE2485627807F17EC54FF3D24"
+    },
+    {
+      "Path": "C:\\Program Files\\SolidCAM2024\\Solidcam\\HostLibSWEM.dll",
+      "Length": 13392160,
+      "FileVersion": "1, 0, 0, 1",
+      "ProductVersion": "1, 0, 0, 1",
+      "Hash": "FED71C1FFB9D6DDDDB9563E7B0ABA4B0A6A39C3534183D567BFA2F8F5B9EC4AE"
+    }
+  ],
+  "Processes": [],
+  "Registry": [
+    {
+      "Path": "Registry::HKEY_CLASSES_ROOT\\SolidCAMCAD2024.Application\\CLSID",
+      "Values": {
+        "": "{ccffa59a-a720-4979-af7f-5ab618d5e55b}"
+      }
+    },
+    {
+      "Path": "HKLM:\\SOFTWARE\\SolidCAM\\SolidCAMCAD2024",
+      "Values": {
+        "": ""
+      }
+    }
+  ]
+}
