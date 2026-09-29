@@ -1,0 +1,48 @@
+{
+  "Files": [
+    {
+      "Role": "Default",
+      "Path": "C:\\Program Files\\SolidCAM2024\\Solidcam\\solidcame.exe",
+      "SHA256": "86DD940519E96D5787282BCC38A56B8462D2F43602DB80A9B554F31C97F4C726",
+      "Characteristics": "0x0022",
+      "LAA": true,
+      "SignatureStatus": "HashMismatch"
+    },
+    {
+      "Role": "Unmodified",
+      "Path": "C:\\Program Files\\SolidCAM2024\\Solidcam\\solidcame-no-laa-unmodified.exe",
+      "SHA256": "26D72B6C13A5704BF49097EB534D3B86F93F931870744B195373F2B54395DC7B",
+      "Characteristics": "0x0002",
+      "LAA": false,
+      "SignatureStatus": "Valid"
+    }
+  ],
+  "Shortcuts": [
+    {
+      "Path": "C:\\Users\\Public\\Desktop\\SolidCAM2024E.lnk",
+      "Target": "C:\\Program Files\\SolidCAM2024\\Solidcam\\solidcame.exe",
+      "WorkingDirectory": "C:\\Program Files\\SolidCAM2024\\solidcam\\",
+      "Arguments": ""
+    },
+    {
+      "Path": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\SolidCAM2024\\SolidCAM2024E.lnk",
+      "Target": "C:\\Program Files\\SolidCAM2024\\Solidcam\\solidcame.exe",
+      "WorkingDirectory": "C:\\Program Files\\SolidCAM2024\\solidcam\\",
+      "Arguments": ""
+    },
+    {
+      "Path": "C:\\Mac\\Home\\Desktop\\SolidCAM2024E 无修改版.lnk",
+      "Target": "C:\\Program Files\\SolidCAM2024\\Solidcam\\solidcame-no-laa-unmodified.exe",
+      "WorkingDirectory": "C:\\Program Files\\SolidCAM2024\\solidcam\\",
+      "Arguments": ""
+    },
+    {
+      "Path": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\SolidCAM2024\\SolidCAM2024E 无修改版.lnk",
+      "Target": "C:\\Program Files\\SolidCAM2024\\Solidcam\\solidcame-no-laa-unmodified.exe",
+      "WorkingDirectory": "C:\\Program Files\\SolidCAM2024\\solidcam\\",
+      "Arguments": ""
+    }
+  ],
+  "Readme": "C:\\Program Files\\SolidCAM2024\\Solidcam\\SOLIDCAME-LAA-README.md",
+  "ReadmeSHA256": "4509D5852E36A90DFFB929E04B5E7645B80475F300410356123B0700C744F335"
+}

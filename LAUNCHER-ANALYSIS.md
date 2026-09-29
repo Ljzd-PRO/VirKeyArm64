@@ -25,7 +25,7 @@
 
 副本 SHA256：`86dd940519e96d5787282bcc38a56b8462d2f43602db80a9b554f31c97f4c726`。
 
-原始文件及安装快捷方式未被覆盖。副本是兼容性诊断产物，不是厂商签名的发布版本；正式修复应由厂商启用 LAA 后重新签名。没有修改启动器的机器码、OEM 初始化逻辑、SolidCAM 主程序或 CAD 主程序。原有驱动包未改动。
+这是 2026-09-30 初始诊断时的状态：原始文件及安装快捷方式当时未被覆盖。副本是兼容性诊断产物，不是厂商签名的发布版本；正式修复应由厂商启用 LAA 后重新签名。没有修改启动器的机器码、OEM 初始化逻辑、SolidCAM 主程序或 CAD 主程序。原有驱动包未改动。后续用户要求将 LAA 版设为原名默认入口，实际安装状态见文末。
 
 启动时没有其他 CAD/CAM 进程。诊断启动返回 PID 8952；随后观察到：
 
@@ -85,6 +85,12 @@ python3 tools/make-launcher-laa-copy.py \
 C:\Program Files\SolidCAM2024\Solidcam\solidcame-arm64-diagnostic.exe
 ```
 
-启动工作目录应为 `C:\Program Files\SolidCAM2024\Solidcam`，不添加参数。当前主窗口保持运行，不要再重复启动。当前桌面安装快捷方式仍指向原始启动器，仍会遇到原始错误。后续已通过 `tools/guest-create-laa-shortcut.ps1` 创建并回读核验独立桌面入口 **SolidCAM2024E ARM64 (LAA)**，目标为上述副本，参数为空且工作目录正确；以后使用这个新入口即可。脚本可重复运行，拒绝覆盖字段不同的同名快捷方式。
+初始诊断时曾通过独立桌面入口 **SolidCAM2024E ARM64 (LAA)** 启动上述副本。后续用户要求改为原名默认入口，该临时桌面入口和诊断副本已经清理。启动工作目录仍为 `C:\Program Files\SolidCAM2024\Solidcam`，无额外参数。
 
 脚本在 Mac 重新生成第二个副本，得到相同 SHA256，证明本次修改可重现。没有提交厂商 EXE、完整反汇编、进程环境或 OEM 配置内容。
+
+## 后续安装：原名默认启用 LAA
+
+按用户要求，已在同一 ARM64 客体将经哈希核验的 LAA 版放回 `C:\Program Files\SolidCAM2024\Solidcam\solidcame.exe`，把厂商原版完整备份为 `solidcame-no-laa-unmodified.exe`。原桌面和开始菜单 `SolidCAM2024E` 入口无需改目标，新建的 `SolidCAM2024E 无修改版` 入口指向备份。两套快捷方式均保留安装时的工作目录和空参数。同目录增加 `SOLIDCAME-LAA-README.md` 说明原因、差异、哈希和恢复方法。诊断副本及临时快捷方式在确认无人引用后清理。
+
+[最终文件、LAA 位、签名与快捷方式核验](evidence/launcher-analysis/default-install-verification.json)。该核验确认原名文件的哈希为 `86dd940519e96d5787282bcc38a56b8462d2f43602db80a9b554f31c97f4c726`、Characteristics `0x0022`，备份哈希为 `26d72b6c13a5704bf49097eb534d3b86f93f931870744b195373f2b54395dc7b`、Characteristics `0x0002`。当前已有前次诊断启动的内置 CAD 会话，未结束用户会话来重复启动；启动成功的动态证据来自与现在原名文件**字节完全一致**的诊断副本。运行新原名快捷方式的独立复测尚未进行。
